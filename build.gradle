@@ -17,7 +17,8 @@ repositories {
 }
 
 dependencies {
-    compile 'org.eclipse.mdht:org.eclipse.mdht.cda-runtime:3.0.0-20170424.212838-1'
+    compile 'org.eclipse.mdht:org.eclipse.mdht.cda-runtime:3.0.0-20170424.212838-1@pom'
+    // MDHT 3rd Party Dependencies
     compile 'lpg.runtime:java:+'
     compile 'org.eclipse.emf.ecore.xmi:org.eclipse.emf.ecore.xmi:+'
     compile 'org.eclipse.emf.ecore:org.eclipse.emf.ecore:+'
@@ -26,10 +27,13 @@ dependencies {
     compile 'org.eclipse.ocl.common:org.eclipse.ocl.common:+'
     compile 'org.eclipse.ocl.ecore:org.eclipse.ocl.ecore:+'
     compile 'org.eclipse.uml2.types:org.eclipse.uml2.types:+'
+    // MDHT Core Dependencies
     compile 'org.eclipse.mdht:org.eclipse.mdht.emf.runtime:+'
+    // MDHT CDA Dependencies
     compile 'org.eclipse.mdht:org.eclipse.mdht.uml.hl7.vocab:+'
     compile 'org.eclipse.mdht:org.eclipse.mdht.uml.hl7.datatypes:+'
     compile 'org.eclipse.mdht:org.eclipse.mdht.uml.hl7.rim:+'
     compile 'org.eclipse.mdht:org.eclipse.mdht.uml.cda:+'
+    // MDHT CDA Implementation Guide Dependencies
     compile 'org.openhealthtools.mdht.cda:org.openhealthtools.mdht.uml.cda.consol2:+'
 }
