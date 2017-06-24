@@ -1,0 +1,35 @@
+apply plugin: 'java'
+apply plugin: 'application'
+
+mainClassName = "org.openhealthtools.mdht.cda.gradle.example.Examples"
+
+repositories {
+    jcenter()
+    maven {
+        url 'http://devsoap.sitenv.org:8081/artifactory/ext-release-local'
+    }
+    maven {
+		url 'http://devsoap.sitenv.org:8081/artifactory/libs-release-local'
+	}
+    maven {
+        url 'http://devsoap.sitenv.org:8081/artifactory/plugins-release-local'
+    }
+}
+
+dependencies {
+    compile 'org.eclipse.mdht:org.eclipse.mdht.cda-runtime:3.0.0-20170424.212838-1'
+    compile 'lpg.runtime:java:+'
+    compile 'org.eclipse.emf.ecore.xmi:org.eclipse.emf.ecore.xmi:+'
+    compile 'org.eclipse.emf.ecore:org.eclipse.emf.ecore:+'
+    compile 'org.eclipse.emf.common:org.eclipse.emf.common:+'
+    compile 'org.eclipse.ocl:org.eclipse.ocl:+'
+    compile 'org.eclipse.ocl.common:org.eclipse.ocl.common:+'
+    compile 'org.eclipse.ocl.ecore:org.eclipse.ocl.ecore:+'
+    compile 'org.eclipse.uml2.types:org.eclipse.uml2.types:+'
+    compile 'org.eclipse.mdht:org.eclipse.mdht.emf.runtime:+'
+    compile 'org.eclipse.mdht:org.eclipse.mdht.uml.hl7.vocab:+'
+    compile 'org.eclipse.mdht:org.eclipse.mdht.uml.hl7.datatypes:+'
+    compile 'org.eclipse.mdht:org.eclipse.mdht.uml.hl7.rim:+'
+    compile 'org.eclipse.mdht:org.eclipse.mdht.uml.cda:+'
+    compile 'org.openhealthtools.mdht.cda:org.openhealthtools.mdht.uml.cda.consol2:+'
+}
